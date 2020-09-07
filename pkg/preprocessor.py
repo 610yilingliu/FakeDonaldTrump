@@ -2,7 +2,6 @@ import os
 import dlib
 import cv2
 import numpy as np
-import face_recognition
 
 def cut_image(path):
     """
