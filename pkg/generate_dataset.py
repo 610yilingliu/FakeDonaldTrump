@@ -1,6 +1,5 @@
 import cv2
 import os
-import pandas as pd
 import numpy as np
 
 def to_npz(path, outname):
