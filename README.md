@@ -7,3 +7,6 @@ From [Kaggle Trump Photo Dataset](https://www.kaggle.com/mbkinaci/trump-photos)
 
 Trump's photos are also available by using [Python Google Image Downloading Tool](https://github.com/hardikvasa/google-images-download)
 
+GAN model from [Generate House Number by Yiling](https://github.com/610yilingliu/GenerateHouseNumber)
+
+It is a project that converts DCGAN PyTorch code to TensorFlow.
