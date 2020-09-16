@@ -9,4 +9,4 @@ Trump's photos are also available by using [Python Google Image Downloading Tool
 
 GAN model from [Generate House Number by Yiling](https://github.com/610yilingliu/GenerateHouseNumber)
 
-It is a project that converts DCGAN PyTorch code to TensorFlow. You can find full explain and documentation of DCGAN in that repo
+It is a project that converts DCGAN PyTorch code to TensorFlow. You can find full explain, related tests and documentation of DCGAN in that repo
