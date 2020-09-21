@@ -45,7 +45,7 @@ You can also add prefix `pkg.` for all imports(not include library installed in 
 - TensorFlow 2.0+
 - Numpy
 - OpenCV
-- face_recognition
+- [face_recognition](https://github.com/ageitgey/face_recognition)
 - dlib
   
 Scipy is not really needed, if you haven't installed Scipy and got an errorr in `get_npz.py`, fell free to remove `import scipy.io` and function `mat_tonpz`. That function aims to convert .mat file to .npz file, but we are using images here.
