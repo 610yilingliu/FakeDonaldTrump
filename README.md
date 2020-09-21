@@ -17,6 +17,13 @@ Could be found in [Results](./results)
 
 `avatar_trump` is not one of the result folder, it just something fun happened when I forgot to convert BGR to RGB, so the Trump looks like Avatar :)
 
+## General Process
+
+- Crop Trump's face from photos in mentioned data resources with OpenCV, dlib and face_recognition library(in [`get_face.py`](./pkg/get_face.py))
+- Resize face into 64 * 64 images
+- Convert those 64 * 64 image to an numpy dataset for further use
+- Apply DCGAN, visualization and logging are applied during the training process and the images generated while training will be in './report_imgs' and the losses and model will be in `./logs` by default
+
 ## Applied techs
 - DCGAN
 - Dynamic learning rate
@@ -25,10 +32,20 @@ Will try to use relu + relu or leaky-relu + leaky-relu instead of relu+leaky rel
 
 In "Generate House Number" project I tried to remove all relu layers from generator and found the result is not good.(relu can reduce the dimension of output by removing negative factors)
 
+## Usage
+I am using VSCode to debugging and running this project in my own machine(I am currently in China and Colab is not very stable to visit with my own AWS vpn).
+
+You can use IDE to open this folder as a project, and run `__main__.py`.
+
+You can also add prefix `pkg.` for all imports(not include library installed in the environment) under pkg folder and type `python -m pkg` to run.
+
 ## Requirements
 
 - Python 3
 - TensorFlow 2.0+
 - Numpy
 - OpenCV
+- face_recognition
+- dlib
+  
 Scipy is not really needed, if you haven't installed Scipy and got an errorr in `get_npz.py`, fell free to remove `import scipy.io` and function `mat_tonpz`. That function aims to convert .mat file to .npz file, but we are using images here.
