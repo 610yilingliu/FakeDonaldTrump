@@ -7,6 +7,28 @@ From [Kaggle Trump Photo Dataset](https://www.kaggle.com/mbkinaci/trump-photos)
 
 Trump's photos are also available by using [Python Google Image Downloading Tool](https://github.com/hardikvasa/google-images-download)
 
-GAN model from [Generate House Number by Yiling](https://github.com/610yilingliu/GenerateHouseNumber)
+Tests could be found in another project also wrote by myself: [Generate House Number by Yiling](https://github.com/610yilingliu/GenerateHouseNumber), Some of the code in this project are also copied from Generate House Number.
 
-It is a project that converts DCGAN PyTorch code to TensorFlow. You can find full explain, related tests and documentation of DCGAN in that repo
+Generate House Number(TensorFLow version) is a project that I created for students who studying AI in the University of Western Australia to study DCGAN with detailed comment about Python and computer vision.
+
+## Achieved Result
+
+Could be found in [Results](./results)
+
+`avatar_trump` is not one of the result folder, it just something fun happened when I forgot to convert BGR to RGB, so the Trump looks like Avatar :)
+
+## Applied techs
+- DCGAN
+- Dynamic learning rate
+
+Will try to use relu + relu or leaky-relu + leaky-relu instead of relu+leaky relu in generator and discriminator, and use other GANs from papers instead of raw DCGAN
+
+In "Generate House Number" project I tried to remove all relu layers from generator and found the result is not good.(relu can reduce the dimension of output by removing negative factors)
+
+## Requirements
+
+- Python 3
+- TensorFlow 2.0+
+- Numpy
+- OpenCV
+Scipy is not really needed, if you haven't installed Scipy and got an errorr in `get_npz.py`, fell free to remove `import scipy.io` and function `mat_tonpz`. That function aims to convert .mat file to .npz file, but we are using images here.
