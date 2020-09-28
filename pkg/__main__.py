@@ -6,7 +6,7 @@ from visualize_tools import *
 
 # Learning is a static value or not
 dynamic_lr = False
-
+np.random.seed(0)
 
 logname = time_helper()
 if not os.path.exists('./logs'):
@@ -80,7 +80,7 @@ d_optimizer = tf.keras.optimizers.Adam(learning_rate = lr, beta_1 = beta1, beta_
 g_optimizer = tf.keras.optimizers.Adam(learning_rate = lr, beta_1 = beta1, beta_2 = beta2)
 
 # training hyperparameters
-num_epochs = 400 # Yuliya's notebook says that 50 epochs will run for a 2-4 hours - maybe it is a data from mac cpu?
+num_epochs = 1000 # Yuliya's notebook says that 50 epochs will run for a 2-4 hours - maybe it is a data from mac cpu?
 
 
 # keep track of loss
