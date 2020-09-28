@@ -53,6 +53,8 @@ Infrastructure of DCGAN(image from the internet)
 
 The original DCGAN training model that [Yuliya uses as example](https://github.com/YuliyaLab/AIclass/blob/master/L9_DCGAN_housenum_1.ipynb) uses `lr = 0.0002` as learning rate, but it is too slow for training result to converge to a human-eyes-qualified result.
 
+All result images and logs are available [HERE](./results)
+
 ### 1. DCGAN + lr == 0.0002
 
 With `lr == 0.0002`, we can see that the Trump's face is very fuzzy in epoch 200
