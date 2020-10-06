@@ -55,7 +55,9 @@ The original DCGAN training model that [Yuliya uses as example](https://github.c
 
 All result images and logs are available [HERE](./results)
 
-### 1. DCGAN + lr == 0.0002
+Examples of source Trump's face
+![](./results/dynamic_lr/2020_09_28_18_32_source_pics.png)
+### 1. DCGAN(lr == 0.0002)
 
 With `lr == 0.0002`, we can see that the Trump's face is very fuzzy in epoch 200
 ![](./report/2020_09_15_01_50_epoch200.png)
@@ -70,7 +72,7 @@ Loss in 5000 epoch could be plotted as figure below, it takes 320 minutes 20 sec
 
 ![](./report/losses_nochange.png)
 
-### 2. DCGAN + Dynamic lr
+### 2. DCGAN(Dynamic Learning Rate)
 
 To accelerate the training process, I apply the discrete learning rate to DCGAN based on the current training epoch with function `change_lr` and 
 
